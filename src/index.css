@@ -1,0 +1,89 @@
+/* Clean Monochromatic Corporate Design System */
+:root {
+  /* Strict Corporate Monochromatic Palette */
+  --color-bg-base: #0a0d14;
+  --color-bg-surface: #121722;
+  --color-bg-elevated: #1a202e;
+  --color-bg-hover: #222a3d;
+
+  --color-border-subtle: #262e42;
+  --color-border-medium: #36415d;
+  --color-border-focus: #637396;
+  --color-border-error: #ef4444;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #0a0d14;
+
+  --color-badge-bg: #1e2638;
+  --color-badge-text: #cbd5e1;
+
+  --color-status-success-bg: #064e3b;
+  --color-status-success-text: #6ee7b7;
+  --color-status-warning-bg: #451a03;
+  --color-status-warning-text: #fcd34d;
+  --color-status-error-bg: #450a0a;
+  --color-status-error-text: #fca5a5;
+
+  /* Consistent Spacing Steps (16px / 32px rhythm) */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Accessible focus visible outlines */
+:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background-color: var(--color-badge-bg);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
